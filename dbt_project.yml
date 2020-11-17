@@ -35,4 +35,8 @@ models:
   dbt_comp_name:
       # Applies to all files under models/example/
       example:
-          materialized: view
+          +materialized: view
+          +schema: staging
+      snowflake_sample_data:
+          +materialized: table
+          +schema: staging

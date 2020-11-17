@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: snowflake_sample_data # this is the name how we refer in the code not the database name. Reference to this block
+    description: Sample DB Provided By Snowflake
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCDS_SF10TCL
+    tables:
+      - name: STORE_SALES
+        description: Details about the sales in the store
+#        columns:
+#          - col1 with description and other properties
+#          - col2
+
+#
+#  - name: stripe
+#    tables:
+#      - name: payments
